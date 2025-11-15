@@ -1,0 +1,48 @@
+"use client"
+import {Container, Row, Col, Form, Button, Card} from 'react-bootstrap';
+
+function ContactSection() {
+    return (
+        <Container id="contact" className="py-5">
+            <Row className="justify-content-center">
+                <Col md={8}>
+                    <Card className="p-4 shadow-lg border-0"> 
+                        <div className="text-center">
+                            <h2 className="display-5 fw-bold mb-3">Get In Touch</h2>
+                            <p className="lead text-muted">Jangan ragu untuk menghubungi kami. Tim kami siap mendiskusikan proyek dan kebutuhan digital Anda.</p>
+                        </div>
+                        <Form className='mt-5 text-start'>
+                            <Row>
+                                <Col md={6}>
+                                    <Form.Group className="mb-4" controlId="formName">
+                                        <Form.Label className="fw-bold">Name</Form.Label>
+                                        <Form.Control size="lg" type="text" placeholder="Enter your full name" required />
+                                    </Form.Group>
+                                </Col>
+                                <Col md={6}>
+                                    <Form.Group className="mb-4" controlId="formEmail">
+                                        <Form.Label className="fw-bold">Email address</Form.Label>
+                                        <Form.Control size="lg" type="email" placeholder="Enter your professional email" required />
+                                    </Form.Group>
+                                </Col>
+                            </Row>
+                            <Form.Group className="mb-4" controlId="formSubject">
+                                <Form.Label className="fw-bold">Subject</Form.Label>
+                                <Form.Control size="lg" type="text" placeholder="Subject of your message" required />
+                            </Form.Group>
+                            <Form.Group className="mb-4" controlId="formMessage">
+                                <Form.Label className="fw-bold">Message</Form.Label>
+                                <Form.Control as="textarea" rows={6} placeholder="Enter your detailed message" />
+                            </Form.Group>
+                            <Button variant="dark" type="submit" size="lg" className="w-100">
+                                Send Message
+                            </Button>
+                        </Form>
+                    </Card>
+                </Col>
+            </Row>
+        </Container>        
+    )
+}
+
+export default ContactSection;
