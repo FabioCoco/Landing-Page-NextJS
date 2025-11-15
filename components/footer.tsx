@@ -33,7 +33,7 @@ export default function Footer() {
                         <h5 className="fw-bold mb-3 text-light">Contact Info</h5>
                         <p className="text-light opacity-75"><i className="bi bi-geo-alt-fill me-2"></i> 123 Main Street, Jakarta</p>
                         <p className="text-light opacity-75"><i className="bi bi-envelope-fill me-2"></i> info@shadowstudio.com</p>
-                        <p className="text-light opacity-75"><i className="bi bi-phone-fill me-2"></i> +62 812 3456 7890</p>
+                        <p className="text-light opacity-75"><i className="bi bi-phone-fill me-2"></i> +62 812 000 0000</p>
                     </Col>
                 </Row>
                 <Row className="mt-4 border-top border-secondary pt-3">
