@@ -10,6 +10,9 @@ import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import WorkSection from "../components/worksection";
 import ServiceSection from "../components/servicesection";
+import ImpactSection from "../components/impactsection";
+import Testimonials from "../components/testimonials";
+import FaqSection from "../components/faqsection";
 import ContactSection from "../components/contactsection";
 import Footer from "../components/footer";
  
@@ -48,10 +51,16 @@ export default function Home() {
           <WorkSection />
         </section>
         
+        <ImpactSection />
+
+        <Testimonials />
+
         <section className="bg-dark">
           <ServiceSection />
         </section>
         
+        <FaqSection />
+
         <section className="bg-dark">
           <ContactSection />
         </section>
